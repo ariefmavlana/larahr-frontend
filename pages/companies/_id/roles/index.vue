@@ -78,7 +78,7 @@
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
       <p v-if="$fetchState.pending">Fetching roles...</p>
-        <div class="items-center card !flex-row gap-4" v-else v-for="roles in roles.data.result.data">
+        <div class="items-center card !flex-row gap-4" v-else v-for="roles in roles.data.result.data" :key="roles.id">
           <a
             href="#"
             class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"

@@ -82,7 +82,7 @@
         class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:gap-10 lg:gap-3"
       >
       <p v-if="$fetchState.pending">Fetching teams...</p>
-        <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0" v-else v-for="team in teams.data.result.data">
+        <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0" v-else v-for="team in teams.data.result.data" :key="team.id">
           <a
             href="#"
             class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"

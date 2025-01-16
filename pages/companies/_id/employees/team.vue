@@ -47,7 +47,7 @@
           ">
                     <p v-if="$fetchState.pending">Fetching teams...</p>
                     <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0" v-else
-                         v-for="team in teams.data.result.data">
+                         v-for="team in teams.data.result.data" :key="team.id">
                         <input type="radio" name="team_id" id="productGrowth" :value="team.id" @click="updateTeamId"
                                class="
                             absolute
