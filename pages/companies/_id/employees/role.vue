@@ -16,7 +16,7 @@
                 <p v-if="$fetchState.pending">Fetching roles...</p>
                 <select v-else name="roles" :value="role_id" @change="updateRoleId"
                         class="appearance-none input-field form-icon-chevron_down">
-                    <option :value="role.id" v-for="role in roles.data.result.data" :key="role.id">
+                    <option :value="role.id" v-for="role in roles.data.result.data">
                         {{ role.name }}
                     </option>
                 </select>
@@ -26,7 +26,7 @@
             <section>
                 <label for="" class="text-grey"> Responsibilities </label>
                 <div class="flex flex-col gap-4 mt-[10px]">
-                    <div class="flex items-start md:items-center gap-[6px]" v-for="responsibility in responsibilities" :key="responsibility.id">
+                    <div class="flex items-start md:items-center gap-[6px]" v-for="responsibility in responsibilities">
                         <img src="/assets/svgs/ic-check-circle.svg" alt="" />
                         <span class="text-sm text-dark">
                             {{ responsibility.name }}

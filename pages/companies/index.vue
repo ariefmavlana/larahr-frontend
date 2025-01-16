@@ -12,7 +12,7 @@
           id=""
           class="appearance-none input-field form-icon-chevron_down"
         >
-          <option :value="company.id" v-for="company in companies.data.result.data" :key="company.id">
+          <option :value="company.id" v-for="company in companies" :key="company.id">
             {{ company.name }}
           </option>
         </select>

@@ -19,13 +19,6 @@
             Sign In
         </button>
     </form>
-    <!-- Add register link section -->
-    <div class="flex gap-2 items-center justify-center mt-6">
-      <span class="text-grey">Don't have an account?</span>
-      <NuxtLink to="/register" class="text-primary font-medium hover:underline">
-        Register
-      </NuxtLink>
-    </div>
   </section>
 </template>
 

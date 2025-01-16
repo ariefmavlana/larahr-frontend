@@ -6,13 +6,13 @@
         <label for="" class="text-grey">Companies</label>
 
         <p v-if="$fetchState.pending">Fetching companies...</p>
-        <select v-if="companies"
+        <select v-else
           v-model="selectedCompany"
           name="companies"
           id=""
           class="appearance-none input-field form-icon-chevron_down"
         >
-        <option :value="company.id" v-for="company in companies.data.result.data">
+          <option :value="company.id" v-for="company in companies.data.result.data">
             {{ company.name }}
           </option>
         </select>

@@ -128,7 +128,7 @@
       >
         <p v-if="$fetchState.pending">Fetching employees...</p>
         <!-- Card -->
-        <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0" v-else v-for="employee in employees.data.result.data" :key="employee.id">
+        <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0" v-else v-for="employee in employees.data.result.data">
           <a
             href="#"
             class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"
