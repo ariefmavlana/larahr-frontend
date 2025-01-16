@@ -33,13 +33,33 @@
               type="text"
               name=""
               id=""
-              class="input-field !outline-none !border-none italic form-icon-search ring-indigo-200 focus:ring-2 transition-all duration-300 w-full"
+              class="
+                input-field
+                !outline-none
+                !border-none
+                italic
+                form-icon-search
+                ring-indigo-200
+                focus:ring-2
+                transition-all
+                duration-300
+                w-full
+              "
               placeholder="Search people, team, project"
             />
           </form>
           <a
             href="#"
-            class="flex-none w-[46px] h-[46px] bg-white rounded-full p-[11px] relative notification-dot"
+            class="
+              flex-none
+              w-[46px]
+              h-[46px]
+              bg-white
+              rounded-full
+              p-[11px]
+              relative
+              notification-dot
+            "
           >
             <img src="/assets/svgs/ic-bell.svg" alt="" />
           </a>
@@ -64,9 +84,9 @@
                 <p class="text-grey">Employees</p>
                 <div class="text-[32px] font-bold text-dark mt-[6px]">0</div>
               </div>
-              <NuxtLink :to="{ name: 'employees-create' }">
-                <img src="/assets/svgs/ric-plus.svg" alt="" />
-              </NuxtLink>
+              <NuxtLink :to="{ name: 'employees-create' }"
+                ><img src="/assets/svgs/ric-plus.svg" alt=""
+              /></NuxtLink>
             </div>
           </div>
           <div class="card !gap-y-10 min-h-[200px]">
@@ -150,10 +170,9 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
-  layout: 'dashboard',
-  middleware: 'auth'
+    layout: 'dashboard',
+    middleware: 'auth'
 }
 </script>
